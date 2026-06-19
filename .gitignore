@@ -1,0 +1,14 @@
+.gradle/
+build/
+*.apk
+*.aab
+*.ipa
+*.app
+local.properties
+xcuserdata/
+DerivedData/
+.build/
+google-services.json
+*.iml
+.idea/
+*.DS_Store

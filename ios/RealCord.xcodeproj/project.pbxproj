@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		E93FC77C4D8C44BACF3967B6 = {
+			isa = "PBXBuildFile";
+			fileRef = "9E448B98695EAA5114B03B82";
+		};
+		ADB39E3F8B6CCCA5C985A066 = {
+			isa = "PBXBuildFile";
+			fileRef = "2E02C0B295A602C0C4A21C7D";
+		};
+		7FF4D2B6B4F31FEE1A170086 = {
+			isa = "PBXBuildFile";
+			fileRef = "734E3AB1BCB55F0F66085732";
+		};
+		0A7B0EA8C12D3D4B49028325 = {
+			isa = "PBXBuildFile";
+			fileRef = "A98D0A8478EC6D1983E2468E";
+		};
+		B0BBC433AD9704B808AA8C2E = {
+			isa = "PBXBuildFile";
+			fileRef = "87CFA921D3011E9977C833C4";
+		};
+		83EBFAA9B88A5CC38DB0F842 = {
+			isa = "PBXBuildFile";
+			fileRef = "1712430B92E69EC882AF94E9";
+		};
+		72BFD9269E3EF5AC75EF32B4 = {
+			isa = "PBXBuildFile";
+			fileRef = "CFF77E8CD49A55037EBA7702";
+		};
+		CD06C67F0437B35E4C2E4037 = {
+			isa = "PBXBuildFile";
+			fileRef = "B887A3C621F65BA180009A64";
+		};
+		AB52D2C82C1F21FAE3DCC6FD = {
+			isa = "PBXBuildFile";
+			fileRef = "798F2686DDDFED8FBD688FD5";
+		};
+		3A5747D1CA712F1A684E9D81 = {
+			isa = "PBXBuildFile";
+			fileRef = "B9F46F949A742E58B3A47A1B";
+		};
+		46A245E92ABD4D80CBA0E548 = {
+			isa = "PBXBuildFile";
+			fileRef = "2A109CA914407C2352B32175";
+		};
+		5376D2AFDDD45BB398CE2CFE = {
+			isa = "PBXBuildFile";
+			fileRef = "07C1B6567E02DE06AB4EBE63";
+		};
+		BEFB44D897A011D78FA89C9F = {
+			isa = "PBXBuildFile";
+			fileRef = "1D588B997E868965C394DA6A";
+		};
+		0F7F30FC456E2795F2285D9B = {
+			isa = "PBXBuildFile";
+			fileRef = "020D8BEF1EAC769A077704B1";
+		};
+		F536104436BAB39D3B83E6F7 = {
+			isa = "PBXBuildFile";
+			fileRef = "9F32A7F64D47E509E856ABE1";
+		};
+		C41562489B99F208B63362C5 = {
+			isa = "PBXBuildFile";
+			fileRef = "C41891AFCF4E8282CEE557B0";
+		};
+		6292BD1FFAF33EA25E7883FE = {
+			isa = "PBXBuildFile";
+			fileRef = "58CA480E260F598CE72A4892";
+		};
+		BDA1AFD209C7DD960451CD15 = {
+			isa = "PBXBuildFile";
+			fileRef = "CA5B2A31B7A0D8D5F9377E54";
+		};
+		6E16D68BA9E109ABDDCE4BFC = {
+			isa = "PBXBuildFile";
+			fileRef = "CE6AB4D587925AFDFE0856FE";
+		};
+		FE4A7829F2C55A835FD4CDE7 = {
+			isa = "PBXBuildFile";
+			fileRef = "9CABB3E67CC1F4B88C171C3F";
+		};
+		49FE38D49486CA4232B89530 = {
+			isa = "PBXBuildFile";
+			fileRef = "8225433712D8893C8EFF9DB6";
+		};
+		AF08A6AFCEDB0BFB26A88F21 = {
+			isa = "PBXBuildFile";
+			fileRef = "DEDFFC184F782E76303CBE48";
+		};
+		DBC8FAE4F06C99D6856FBD8A = {
+			isa = "PBXBuildFile";
+			fileRef = "92656756F1568A53D3CB15A0";
+		};
+		85ADAAB6C0C914EF197770D2 = {
+			isa = "PBXBuildFile";
+			fileRef = "5B9341D44084C093A5FFD1F2";
+		};
+		EDDC4C983AD08CD55BBF9F02 = {
+			isa = "PBXBuildFile";
+			fileRef = "A45C6C762F9E4510135144AD";
+		};
+		BD35586B85A5A39D9C7B3904 = {
+			isa = "PBXBuildFile";
+			fileRef = "FDA0326635691AE5C6EFFC3E";
+		};
+		8081DDC9CAC28E7E60229295 = {
+			isa = "PBXBuildFile";
+			fileRef = "5B7B90E3BFF78CAE53CD536A";
+		};
+		49A2B4A3389BD2D456E34E32 = {
+			isa = "PBXBuildFile";
+			fileRef = "BB3EA2DDEB011AAE4E701262";
+		};
+		08C5F893541F95D7DE7347CA = {
+			isa = "PBXBuildFile";
+			fileRef = "BDFF62085462A9039BF0B325";
+		};
+		7D0351ADE5159BB8D22DFD25 = {
+			isa = "PBXBuildFile";
+			fileRef = "46369FC24162B94604CB9C51";
+		};
+		0F92A03453C3A51465D8CB9B = {
+			isa = "PBXBuildFile";
+			fileRef = "BDD826BDAE6AB56AF8BDFAF4";
+		};
+		6EE5ADEA2514C7A3A9492F55 = {
+			isa = "PBXBuildFile";
+			fileRef = "BCE6F405B7E6E09DA5E7181E";
+		};
+		48BE1EAC14846C4DD7F6EE1F = {
+			isa = "PBXBuildFile";
+			fileRef = "95B737702DE5E8D24FEF00A2";
+		};
+		291995767AA19444AA0D07FF = {
+			isa = "PBXBuildFile";
+			fileRef = "514B780914310FDBCC5BEF45";
+		};
+		2E29C38B1F256E01588A199D = {
+			isa = "PBXBuildFile";
+			fileRef = "B9A563E22AD2BF7EBCA16437";
+		};
+		825B1CB8CC4983E7DF23AC14 = {
+			isa = "PBXBuildFile";
+			fileRef = "F85929E8FA56D556A0F48A53";
+		};
+		928067637F25591BEE4EA65D = {
+			isa = "PBXBuildFile";
+			fileRef = "15EB6B78E2E34F4BACD03C1F";
+		};
+		49FB2B0D33D5494D81011815 = {
+			isa = "PBXBuildFile";
+			fileRef = "25EC91E57E14C1A4B4FA87C9";
+		};
+		448033915ABF19910C2E2324 = {
+			isa = "PBXBuildFile";
+			fileRef = "29847D765CF88F0A7E74C835";
+		};
+		9E448B98695EAA5114B03B82 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "Color+Hex.swift";
+			sourceTree = "<group>";
+		};
+		2E02C0B295A602C0C4A21C7D = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "CallOffer.swift";
+			sourceTree = "<group>";
+		};
+		734E3AB1BCB55F0F66085732 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "Channel.swift";
+			sourceTree = "<group>";
+		};
+		A98D0A8478EC6D1983E2468E = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "Friend.swift";
+			sourceTree = "<group>";
+		};
+		87CFA921D3011E9977C833C4 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "FriendRequest.swift";
+			sourceTree = "<group>";
+		};
+		1712430B92E69EC882AF94E9 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "Message.swift";
+			sourceTree = "<group>";
+		};
+		CFF77E8CD49A55037EBA7702 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "Server.swift";
+			sourceTree = "<group>";
+		};
+		B887A3C621F65BA180009A64 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "User.swift";
+			sourceTree = "<group>";
+		};
+		798F2686DDDFED8FBD688FD5 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "RealCordApp.swift";
+			sourceTree = "<group>";
+		};
+		B9F46F949A742E58B3A47A1B = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "AuthService.swift";
+			sourceTree = "<group>";
+		};
+		2A109CA914407C2352B32175 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "FirebaseManager.swift";
+			sourceTree = "<group>";
+		};
+		07C1B6567E02DE06AB4EBE63 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "FriendService.swift";
+			sourceTree = "<group>";
+		};
+		1D588B997E868965C394DA6A = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "GifService.swift";
+			sourceTree = "<group>";
+		};
+		020D8BEF1EAC769A077704B1 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "MessageService.swift";
+			sourceTree = "<group>";
+		};
+		9F32A7F64D47E509E856ABE1 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "NitroManager.swift";
+			sourceTree = "<group>";
+		};
+		C41891AFCF4E8282CEE557B0 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "NotificationDelegate.swift";
+			sourceTree = "<group>";
+		};
+		58CA480E260F598CE72A4892 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ServerService.swift";
+			sourceTree = "<group>";
+		};
+		CA5B2A31B7A0D8D5F9377E54 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "UserService.swift";
+			sourceTree = "<group>";
+		};
+		CE6AB4D587925AFDFE0856FE = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "LoginView.swift";
+			sourceTree = "<group>";
+		};
+		9CABB3E67CC1F4B88C171C3F = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "RegisterView.swift";
+			sourceTree = "<group>";
+		};
+		8225433712D8893C8EFF9DB6 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "SplashView.swift";
+			sourceTree = "<group>";
+		};
+		DEDFFC184F782E76303CBE48 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ChannelChatView.swift";
+			sourceTree = "<group>";
+		};
+		92656756F1568A53D3CB15A0 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ChatView.swift";
+			sourceTree = "<group>";
+		};
+		5B9341D44084C093A5FFD1F2 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "DMChatView.swift";
+			sourceTree = "<group>";
+		};
+		A45C6C762F9E4510135144AD = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "GifSearchView.swift";
+			sourceTree = "<group>";
+		};
+		FDA0326635691AE5C6EFFC3E = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "MessageBubbleView.swift";
+			sourceTree = "<group>";
+		};
+		5B7B90E3BFF78CAE53CD536A = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "AddFriendView.swift";
+			sourceTree = "<group>";
+		};
+		BB3EA2DDEB011AAE4E701262 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "FriendsListView.swift";
+			sourceTree = "<group>";
+		};
+		BDFF62085462A9039BF0B325 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "MainTabView.swift";
+			sourceTree = "<group>";
+		};
+		46369FC24162B94604CB9C51 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ProfileDialogView.swift";
+			sourceTree = "<group>";
+		};
+		BDD826BDAE6AB56AF8BDFAF4 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "CreateServerView.swift";
+			sourceTree = "<group>";
+		};
+		BCE6F405B7E6E09DA5E7181E = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "JoinServerView.swift";
+			sourceTree = "<group>";
+		};
+		95B737702DE5E8D24FEF00A2 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ServerDetailView.swift";
+			sourceTree = "<group>";
+		};
+		514B780914310FDBCC5BEF45 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ServerListView.swift";
+			sourceTree = "<group>";
+		};
+		B9A563E22AD2BF7EBCA16437 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ProfileEditView.swift";
+			sourceTree = "<group>";
+		};
+		F85929E8FA56D556A0F48A53 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "SettingsView.swift";
+			sourceTree = "<group>";
+		};
+		15EB6B78E2E34F4BACD03C1F = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "folder.assetcatalog";
+			path = "Assets.xcassets";
+			sourceTree = "<group>";
+		};
+		25EC91E57E14C1A4B4FA87C9 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "folder.assetcatalog";
+			path = "Colors.xcassets";
+			sourceTree = "<group>";
+		};
+		29847D765CF88F0A7E74C835 = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.xml";
+			path = "GoogleService-Info.plist";
+			sourceTree = "<group>";
+		};
+		F5BF48AA40CAD7891EB709FC = {
+			isa = "PBXFileReference";
+			explicitFileType = "wrapper.application";
+			includeInIndex = 0;
+			path = "RealCord.app";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		63A9F0EA7BB98050796B649E = {
+			isa = "PBXGroup";
+			children = (
+				5928955287B8089ED2177128,
+				BF7A2D27A78D590BDEF15AF2,
+			);
+			sourceTree = "<group>";
+		};
+		5928955287B8089ED2177128 = {
+			isa = "PBXGroup";
+			children = (
+				9E448B98695EAA5114B03B82,
+				2E02C0B295A602C0C4A21C7D,
+				734E3AB1BCB55F0F66085732,
+				A98D0A8478EC6D1983E2468E,
+				87CFA921D3011E9977C833C4,
+				1712430B92E69EC882AF94E9,
+				CFF77E8CD49A55037EBA7702,
+				B887A3C621F65BA180009A64,
+				798F2686DDDFED8FBD688FD5,
+				B9F46F949A742E58B3A47A1B,
+				2A109CA914407C2352B32175,
+				07C1B6567E02DE06AB4EBE63,
+				1D588B997E868965C394DA6A,
+				020D8BEF1EAC769A077704B1,
+				9F32A7F64D47E509E856ABE1,
+				C41891AFCF4E8282CEE557B0,
+				58CA480E260F598CE72A4892,
+				CA5B2A31B7A0D8D5F9377E54,
+				CE6AB4D587925AFDFE0856FE,
+				9CABB3E67CC1F4B88C171C3F,
+				8225433712D8893C8EFF9DB6,
+				DEDFFC184F782E76303CBE48,
+				92656756F1568A53D3CB15A0,
+				5B9341D44084C093A5FFD1F2,
+				A45C6C762F9E4510135144AD,
+				FDA0326635691AE5C6EFFC3E,
+				5B7B90E3BFF78CAE53CD536A,
+				BB3EA2DDEB011AAE4E701262,
+				BDFF62085462A9039BF0B325,
+				46369FC24162B94604CB9C51,
+				BDD826BDAE6AB56AF8BDFAF4,
+				BCE6F405B7E6E09DA5E7181E,
+				95B737702DE5E8D24FEF00A2,
+				514B780914310FDBCC5BEF45,
+				B9A563E22AD2BF7EBCA16437,
+				F85929E8FA56D556A0F48A53,
+				15EB6B78E2E34F4BACD03C1F,
+				25EC91E57E14C1A4B4FA87C9,
+				29847D765CF88F0A7E74C835,
+			);
+			path = "RealCord";
+			sourceTree = "<group>";
+		};
+		BF7A2D27A78D590BDEF15AF2 = {
+			isa = "PBXGroup";
+			children = (
+				F5BF48AA40CAD7891EB709FC,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		E7209FB05162B7572F88D05E = {
+			isa = "PBXSourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				{
+					fileRef = "9E448B98695EAA5114B03B82";
+				},
+				{
+					fileRef = "2E02C0B295A602C0C4A21C7D";
+				},
+				{
+					fileRef = "734E3AB1BCB55F0F66085732";
+				},
+				{
+					fileRef = "A98D0A8478EC6D1983E2468E";
+				},
+				{
+					fileRef = "87CFA921D3011E9977C833C4";
+				},
+				{
+					fileRef = "1712430B92E69EC882AF94E9";
+				},
+				{
+					fileRef = "CFF77E8CD49A55037EBA7702";
+				},
+				{
+					fileRef = "B887A3C621F65BA180009A64";
+				},
+				{
+					fileRef = "798F2686DDDFED8FBD688FD5";
+				},
+				{
+					fileRef = "B9F46F949A742E58B3A47A1B";
+				},
+				{
+					fileRef = "2A109CA914407C2352B32175";
+				},
+				{
+					fileRef = "07C1B6567E02DE06AB4EBE63";
+				},
+				{
+					fileRef = "1D588B997E868965C394DA6A";
+				},
+				{
+					fileRef = "020D8BEF1EAC769A077704B1";
+				},
+				{
+					fileRef = "9F32A7F64D47E509E856ABE1";
+				},
+				{
+					fileRef = "C41891AFCF4E8282CEE557B0";
+				},
+				{
+					fileRef = "58CA480E260F598CE72A4892";
+				},
+				{
+					fileRef = "CA5B2A31B7A0D8D5F9377E54";
+				},
+				{
+					fileRef = "CE6AB4D587925AFDFE0856FE";
+				},
+				{
+					fileRef = "9CABB3E67CC1F4B88C171C3F";
+				},
+				{
+					fileRef = "8225433712D8893C8EFF9DB6";
+				},
+				{
+					fileRef = "DEDFFC184F782E76303CBE48";
+				},
+				{
+					fileRef = "92656756F1568A53D3CB15A0";
+				},
+				{
+					fileRef = "5B9341D44084C093A5FFD1F2";
+				},
+				{
+					fileRef = "A45C6C762F9E4510135144AD";
+				},
+				{
+					fileRef = "FDA0326635691AE5C6EFFC3E";
+				},
+				{
+					fileRef = "5B7B90E3BFF78CAE53CD536A";
+				},
+				{
+					fileRef = "BB3EA2DDEB011AAE4E701262";
+				},
+				{
+					fileRef = "BDFF62085462A9039BF0B325";
+				},
+				{
+					fileRef = "46369FC24162B94604CB9C51";
+				},
+				{
+					fileRef = "BDD826BDAE6AB56AF8BDFAF4";
+				},
+				{
+					fileRef = "BCE6F405B7E6E09DA5E7181E";
+				},
+				{
+					fileRef = "95B737702DE5E8D24FEF00A2";
+				},
+				{
+					fileRef = "514B780914310FDBCC5BEF45";
+				},
+				{
+					fileRef = "B9A563E22AD2BF7EBCA16437";
+				},
+				{
+					fileRef = "F85929E8FA56D556A0F48A53";
+				},
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B2D46AA747A59804D46E1F = {
+			isa = "PBXFrameworksBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F8606E9F0A136E2228EBCB = {
+			isa = "PBXResourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				{
+					fileRef = "29847D765CF88F0A7E74C835";
+				},
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AEFBAE01D2DFD981F7DA7D = {
+			isa = "PBXNativeTarget";
+			buildConfigurationList = "F707ED8CFBC457F7F618ECA6";
+			buildPhases = (
+				E7209FB05162B7572F88D05E,
+				29B2D46AA747A59804D46E1F,
+				66F8606E9F0A136E2228EBCB,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RealCord";
+			productName = "RealCord";
+			productReference = "F5BF48AA40CAD7891EB709FC";
+			productType = "com.apple.product-type.application";
+		};
+		EC86DC4F4B4C60C3EC031655 = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = "NO";
+				CLANG_ENABLE_MODULES = "YES";
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				ENABLE_STRICT_OBJC_MSGSEND = "YES";
+				ENABLE_TESTABILITY = "YES";
+				GCC_DYNAMIC_NO_PIC = "NO";
+				GCC_OPTIMIZATION_LEVEL = "0";
+				IPHONEOS_DEPLOYMENT_TARGET = "15.0";
+				MTL_ENABLE_DEBUG_INFO = "INCLUDE_SOURCE";
+				ONLY_ACTIVE_ARCH = "YES";
+				SDKROOT = "iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug";
+		};
+		7BF40F069D95C38DE60AA602 = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = "NO";
+				CLANG_ENABLE_MODULES = "YES";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = "NO";
+				ENABLE_STRICT_OBJC_MSGSEND = "YES";
+				GCC_OPTIMIZATION_LEVEL = "s";
+				IPHONEOS_DEPLOYMENT_TARGET = "15.0";
+				MTL_ENABLE_DEBUG_INFO = "NO";
+				SDKROOT = "iphoneos";
+				SWIFT_COMPILATION_MODE = "wholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = "YES";
+			};
+			name = "Release";
+		};
+		339F2120A275E8028CC42767 = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_STYLE = "Automatic";
+				CURRENT_PROJECT_VERSION = "1";
+				GENERATE_INFOPLIST_FILE = "YES";
+				INFOPLIST_FILE = "RealCord/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = "YES";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = "YES";
+				INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait_UIInterfaceOrientationLandscapeLeft_UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait_UIInterfaceOrientationLandscapeLeft_UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					$(inherited),
+					@executable_path/Frameworks,
+				);
+				MARKETING_VERSION = "1.0";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.realcord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug";
+		};
+		17234DA728CB8FFFA593E13A = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_STYLE = "Automatic";
+				CURRENT_PROJECT_VERSION = "1";
+				GENERATE_INFOPLIST_FILE = "YES";
+				INFOPLIST_FILE = "RealCord/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = "YES";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = "YES";
+				INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait_UIInterfaceOrientationLandscapeLeft_UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait_UIInterfaceOrientationLandscapeLeft_UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					$(inherited),
+					@executable_path/Frameworks,
+				);
+				MARKETING_VERSION = "1.0";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.realcord";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release";
+		};
+		CB7CBE0C3B42E7D081FECC31 = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (
+				EC86DC4F4B4C60C3EC031655,
+				7BF40F069D95C38DE60AA602,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		F707ED8CFBC457F7F618ECA6 = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (
+				339F2120A275E8028CC42767,
+				17234DA728CB8FFFA593E13A,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		46F86FAA6BBF9AC94A7E4595 = {
+			isa = "PBXProject";
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = "CB7CBE0C3B42E7D081FECC31";
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "en";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = "63A9F0EA7BB98050796B649E";
+			productRefGroup = "BF7A2D27A78D590BDEF15AF2";
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D,
+			);
+		};
+	};
+	rootObject = "63A9F0EA7BB98050796B649E";
+}

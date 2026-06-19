@@ -1,0 +1,97 @@
+name: Build iOS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  BUNDLE_ID: com.realcord
+  APP_NAME: RealCord
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+
+      - name: Install fastlane
+        run: gem install fastlane
+
+      - name: Resolve SPM dependencies
+        run: |
+          cd ios
+          xcodebuild -resolvePackageDependencies \
+            -project RealCord.xcodeproj \
+            -scheme RealCord
+
+      - name: Build + sign (if credentials provided)
+        run: |
+          cd ios
+          if [ -n "${{ secrets.APPLE_ID }}" ]; then
+            # Signed build using fastlane
+            fastlane run produce username:"${{ secrets.APPLE_ID }}" app_identifier:"${{ env.BUNDLE_ID }}"
+            fastlane run sigh username:"${{ secrets.APPLE_ID }}" app_identifier:"${{ env.BUNDLE_ID }}" skip_install:true
+            xcodebuild -project RealCord.xcodeproj \
+              -scheme RealCord \
+              -configuration Release \
+              -sdk iphoneos \
+              -derivedDataPath build \
+              -allowProvisioningUpdates \
+              DEVELOPMENT_TEAM="${{ secrets.TEAM_ID }}" \
+              PRODUCT_BUNDLE_IDENTIFIER="${{ env.BUNDLE_ID }}" \
+              clean build
+          else
+            # Unsigned build (TrollStore / jailbreak only)
+            xcodebuild -project RealCord.xcodeproj \
+              -scheme RealCord \
+              -configuration Release \
+              -sdk iphoneos \
+              -derivedDataPath build \
+              CODE_SIGN_IDENTITY="" \
+              CODE_SIGNING_REQUIRED=NO \
+              CODE_SIGNING_ALLOWED=NO \
+              clean build
+          fi
+
+      - name: Package .ipa
+        run: |
+          mkdir -p Payload
+          cp -r ios/build/Build/Products/Release-iphoneos/"${{ env.APP_NAME }}.app" Payload/
+          zip -r "${{ env.APP_NAME }}.ipa" Payload
+          rm -rf Payload
+
+      - name: Upload .ipa
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.APP_NAME }}.ipa
+          path: ${{ env.APP_NAME }}.ipa
+
+      - name: Upload .app
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.APP_NAME }}.app
+          path: ios/build/Build/Products/Release-iphoneos/${{ env.APP_NAME }}.app
+
+  install-on-device:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Install ideviceinstaller
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y usbmuxd libimobiledevice6 libimobiledevice-utils ideviceinstaller
+
+      - name: Download .ipa
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.APP_NAME }}.ipa
+
+      - name: Install to connected device
+        run: |
+          idevice_id -l || echo "No device connected"
+          ideviceinstaller -i "${{ env.APP_NAME }}.ipa" || echo "Install failed (device may not be connected)"

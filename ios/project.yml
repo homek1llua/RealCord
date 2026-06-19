@@ -1,0 +1,40 @@
+name: RealCord
+options:
+  bundleIdPrefix: com.realcord
+  deploymentTarget:
+    iOS: "15.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.7"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    INFOPLIST_FILE: RealCord/Info.plist
+
+targets:
+  RealCord:
+    type: application
+    platform: iOS
+    sources:
+      - RealCord
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.realcord
+        INFOPLIST_FILE: RealCord/Info.plist
+    dependencies:
+      - package: firebase-ios-sdk
+        products: [FirebaseAuth, FirebaseFirestore, FirebaseStorage, FirebaseMessaging]
+      - package: Kingfisher
+    info:
+      path: RealCord/Info.plist
+      properties:
+        UILaunchScreen: []
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSCameraUsageDescription: "RealCord needs camera access for video calls"
+        NSMicrophoneUsageDescription: "RealCord needs microphone access for voice calls"
+        UIApplicationSupportsRemoteNotification: true
+        UIBackgroundModes:
+          - remote-notification
+        FirebaseMessagingAutoInitEnabled: true

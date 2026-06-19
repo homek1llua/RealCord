@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Settings"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/settings_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/settings_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="Username"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/settings_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="email@example.com"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Avatar Text (letter/emoji)"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/settings_avatar_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="Enter a letter or emoji"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Avatar Color"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/color_1" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/color_2" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/color_3" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/color_4" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/color_5" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/color_6" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/color_7" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/color_8" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/color_9" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/color_10" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/color_11" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/color_12" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Username Color (Nitro)"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/username_color_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/uname_color_1" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/uname_color_2" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/uname_color_3" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/uname_color_4" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/username_color_section_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/uname_color_5" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/uname_color_6" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/uname_color_7" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/uname_color_8" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Username Font (Nitro)"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/username_font_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/font_bold"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/btn_primary"
+                android:text="Bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/font_italic"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/btn_primary"
+                android:text="Italic"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/font_serif"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/btn_primary"
+                android:text="Serif"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/font_mono"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/btn_primary"
+                android:text="Mono"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:typeface="monospace" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Username Gradient (Premium)"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/username_gradient_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/uname_grad_start" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/uname_grad_end" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Chat Text Color (Premium)"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/chat_color_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/chat_color_1" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/chat_color_2" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/chat_color_3" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/chat_color_4" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_color_section_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/chat_color_5" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/chat_color_6" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/chat_color_7" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/chat_color_8" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Chat Gradient (Premium)"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/chat_gradient_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/chat_grad_start" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+            <Button android:id="@+id/chat_grad_end" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Profile Background (Premium)"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/profile_bg_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button android:id="@+id/pbg_color_1" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginEnd="2dp" android:backgroundTint="@color/transparent" />
+                <Button android:id="@+id/pbg_color_2" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+                <Button android:id="@+id/pbg_color_3" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginHorizontal="2dp" android:backgroundTint="@color/transparent" />
+                <Button android:id="@+id/pbg_color_4" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:layout_marginStart="2dp" android:backgroundTint="@color/transparent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/pbg_emoji"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Emoji (e.g. ⭐)"
+                    android:maxLength="4"
+                    android:maxLines="1"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted" />
+
+                <EditText
+                    android:id="@+id/pbg_opacity"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Opacity (0.05-0.5)"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_muted" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pbg_banner_url"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edit_text"
+                android:hint="Banner GIF URL (paste a GIF link)"
+                android:maxLines="1"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_muted" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Bio"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/settings_bio"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="top"
+            android:hint="Write something about yourself..."
+            android:maxLength="190"
+            android:padding="12dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Status"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/status_online"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:background="@color/online"
+                android:text="Online"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/status_idle"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@color/idle"
+                android:text="Idle"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/status_dnd"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:background="@color/dnd"
+                android:text="DND"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/status_invisible"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:background="@color/offline"
+                android:text="Offline"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Notifications"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <Switch
+            android:id="@+id/settings_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:checked="true"
+            android:text="Push Notifications"
+            android:textColor="@color/text_primary" />
+
+        <Button
+            android:id="@+id/settings_save"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_primary"
+            android:text="Save Changes"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/settings_update"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_primary"
+            android:text="Check for Updates"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/settings_logout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="#ED4245"
+            android:text="Log Out"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
