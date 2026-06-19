@@ -168,7 +168,6 @@ struct ServerDetailView: View {
                                 newChannelName = ""
                             }
                         }
-                        .fontWeight(.semibold)
                         .padding(.horizontal, 24)
                         .padding(.vertical, 8)
                         .background(Color(hex: "#5865F2"))

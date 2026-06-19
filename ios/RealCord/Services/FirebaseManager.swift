@@ -61,9 +61,9 @@ class FirebaseManager: ObservableObject {
         ])
     }
 
-    func avatarURL(for uid: String) -> URL? {
+    func avatarURL(for uid: String) async -> URL? {
         let ref = storage.child("avatars/\(uid).jpg")
-        return try? ref.downloadURL().wait()
+        return try? await ref.downloadURL()
     }
 
     func uploadAvatar(data: Data, for uid: String) async throws -> URL {

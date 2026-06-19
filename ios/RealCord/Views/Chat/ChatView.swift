@@ -186,7 +186,7 @@ struct ChatView: View {
     }
 
     private func insertMention(user: User) {
-        let parts = messageText.split(separator: "@", omittingEmptySubstrings: false)
+        let parts = messageText.split(separator: "@", omittingEmptySubsequences: false)
         var newText = ""
         for (i, part) in parts.enumerated() {
             if i == parts.count - 1 {

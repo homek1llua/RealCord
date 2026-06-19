@@ -15,7 +15,9 @@ class NotificationDelegate: NSObject, ObservableObject {
         Messaging.messaging().delegate = self
 
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-        UNUserNotificationCenter.current().requestAuthorization(options: authOptions)
+        Task {
+            try? await UNUserNotificationCenter.current().requestAuthorization(options: authOptions)
+        }
     }
 }
 

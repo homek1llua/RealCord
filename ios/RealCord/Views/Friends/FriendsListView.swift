@@ -127,8 +127,7 @@ struct FriendsListView: View {
     }
 
     private func observeData(uid: String) {
-        friendService.observeFriends(userId: uid) { [weak self] friendList in
-            guard let self = self else { return }
+        friendService.observeFriends(userId: uid) { friendList in
             let uids = friendList.map { $0.friendId }
             Task {
                 var users: [User] = []
@@ -143,21 +142,21 @@ struct FriendsListView: View {
             }
         }
 
-        friendService.observeFriendRequests(userId: uid) { [weak self] requests in
-            self?.pendingRequests = requests
+        friendService.observeFriendRequests(userId: uid) { requests in
+            self.pendingRequests = requests
             Task {
                 for request in requests {
-                    if let user = try? await self?.userService.fetchUser(uid: request.fromId) {
+                    if let user = try? await self.userService.fetchUser(uid: request.fromId) {
                         await MainActor.run {
-                            self?.requestUsers[request.fromId] = user
+                            self.requestUsers[request.fromId] = user
                         }
                     }
                 }
             }
         }
 
-        userService.observeUser(uid: uid) { [weak self] user in
-            self?.unreadCounts = user?.unreadCounts ?? [:]
+        userService.observeUser(uid: uid) { user in
+            self.unreadCounts = user?.unreadCounts ?? [:]
         }
     }
 }
