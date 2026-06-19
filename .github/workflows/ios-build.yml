@@ -15,11 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Select Xcode
-        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Install XcodeGen
+        run: brew install xcodegen
 
-      - name: Install fastlane
-        run: gem install fastlane
+      - name: Generate Xcode project
+        run: |
+          cd ios
+          xcodegen generate
 
       - name: Resolve SPM dependencies
         run: |
@@ -28,34 +30,18 @@ jobs:
             -project RealCord.xcodeproj \
             -scheme RealCord
 
-      - name: Build + sign (if credentials provided)
+      - name: Build
         run: |
           cd ios
-          if [ -n "${{ secrets.APPLE_ID }}" ]; then
-            # Signed build using fastlane
-            fastlane run produce username:"${{ secrets.APPLE_ID }}" app_identifier:"${{ env.BUNDLE_ID }}"
-            fastlane run sigh username:"${{ secrets.APPLE_ID }}" app_identifier:"${{ env.BUNDLE_ID }}" skip_install:true
-            xcodebuild -project RealCord.xcodeproj \
-              -scheme RealCord \
-              -configuration Release \
-              -sdk iphoneos \
-              -derivedDataPath build \
-              -allowProvisioningUpdates \
-              DEVELOPMENT_TEAM="${{ secrets.TEAM_ID }}" \
-              PRODUCT_BUNDLE_IDENTIFIER="${{ env.BUNDLE_ID }}" \
-              clean build
-          else
-            # Unsigned build (TrollStore / jailbreak only)
-            xcodebuild -project RealCord.xcodeproj \
-              -scheme RealCord \
-              -configuration Release \
-              -sdk iphoneos \
-              -derivedDataPath build \
-              CODE_SIGN_IDENTITY="" \
-              CODE_SIGNING_REQUIRED=NO \
-              CODE_SIGNING_ALLOWED=NO \
-              clean build
-          fi
+          xcodebuild -project RealCord.xcodeproj \
+            -scheme RealCord \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            clean build
 
       - name: Package .ipa
         run: |
@@ -75,23 +61,3 @@ jobs:
         with:
           name: ${{ env.APP_NAME }}.app
           path: ios/build/Build/Products/Release-iphoneos/${{ env.APP_NAME }}.app
-
-  install-on-device:
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
-    steps:
-      - name: Install ideviceinstaller
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y usbmuxd libimobiledevice6 libimobiledevice-utils ideviceinstaller
-
-      - name: Download .ipa
-        uses: actions/download-artifact@v4
-        with:
-          name: ${{ env.APP_NAME }}.ipa
-
-      - name: Install to connected device
-        run: |
-          idevice_id -l || echo "No device connected"
-          ideviceinstaller -i "${{ env.APP_NAME }}.ipa" || echo "Install failed (device may not be connected)"
